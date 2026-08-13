@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Config locale de l'outil Claude Code (spécifique à cette machine, pas à l'app)
+.claude/
+
+# Données locales générées par l'app — pas de secrets, mais pas utile à versionner
+garage_db.csv
+ad_cache.json
+
+# Vrais secrets (clé API) — ne JAMAIS committer. Voir .streamlit/secrets.toml.example
+.streamlit/secrets.toml
+.env
